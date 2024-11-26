@@ -33,4 +33,5 @@ CSS3: For styling and responsiveness.
 JavaScript: To handle user inputs and perform calculations.
 
 
-Link: 
+Link: https://muditgupta07.github.io/Tip-Calculator/
+
