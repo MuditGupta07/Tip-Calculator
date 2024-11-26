@@ -1,0 +1,151 @@
+/* *{
+    margin:0%;
+    padding:0%;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html,body{
+    height:100%;
+    width:100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+} */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right, #4facfe, #00f2fe); /* Gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main {
+    background: white;
+    width: 90%;
+    max-width: 450px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between elements */
+}
+
+#Head h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+#Msg p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+#Input {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between input fields */
+}
+
+#Input div {
+    text-align: left;
+}
+
+#Input p {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 5px;
+}
+
+#Input input {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+#Input input:focus {
+    border-color: #00c6ff;
+    box-shadow: 0px 4px 8px rgba(0, 198, 255, 0.3);
+}
+
+#Calc input {
+    padding: 12px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #00c6ff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#Calc input:hover {
+    background-color: #0078b3;
+}
+
+#Output {
+    margin-top: 20px;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+#Tamt, #Total {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #main {
+        width: 95%;
+        padding: 15px;
+    }
+
+    #Head h1 {
+        font-size: 1.5rem;
+    }
+
+    #Msg p {
+        font-size: 0.9rem;
+    }
+
+    #Input input {
+        font-size: 0.9rem;
+    }
+
+    #Calc input {
+        font-size: 0.9rem;
+    }
+
+    #Tamt, #Total {
+        font-size: 1rem;
+    }
+}
